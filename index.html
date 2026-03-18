@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÉVORA | Modern Luxury Sustainable Fashion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #f4f4f2;
+            --accent: #8c7e6a; /* Muted Earthy Gold */
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--white);
+            color: var(--primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.5rem 5%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2.5rem; }
+        nav ul li a { text-decoration: none; color: var(--primary); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; transition: var(--transition); }
+        nav ul li a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; color: var(--white);
+        }
+
+        .hero h1 { font-size: clamp(3rem, 8vw, 6rem); font-weight: 400; margin-bottom: 1rem; }
+        .hero p { font-style: italic; font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 2rem; }
+
+        /* Modern Buttons */
+        .btn {
+            padding: 1rem 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-light { border: 1px solid var(--white); color: var(--white); }
+        .btn-light:hover { background: var(--white); color: var(--primary); }
+
+        .btn-dark { border: 1px solid var(--primary); color: var(--primary); }
+        .btn-dark:hover { background: var(--primary); color: var(--white); }
+
+        /* Sections General */
+        section { padding: 100px 10%; }
+
+        .section-title { text-align: center; margin-bottom: 4rem; }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .section-title div { width: 50px; height: 1px; background: var(--accent); margin: 0 auto; }
+
+        /* Collections / Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card { position: relative; overflow: hidden; }
+        .card img { width: 100%; height: 500px; object-fit: cover; transition: var(--transition); }
+        .card:hover img { transform: scale(1.03); }
+        .card-info { margin-top: 1rem; text-align: center; }
+        .card-info h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .card-info p { font-size: 0.9rem; color: #666; }
+
+        /* Sustainability Section */
+        .sustainability { background-color: var(--secondary); display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; }
+        .sus-text { flex: 1; min-width: 300px; }
+        .sus-img { flex: 1; min-width: 300px; height: 400px; background: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80') center/cover; }
+
+        /* Contact & Footer */
+        .contact { text-align: center; }
+        footer { padding: 4rem 10%; background: var(--primary); color: var(--white); text-align: center; }
+        .footer-logo { font-size: 1.5rem; letter-spacing: 5px; margin-bottom: 1rem; }
+        .footer-links { margin: 2rem 0; }
+        .footer-links a { color: #888; text-decoration: none; margin: 0 1rem; font-size: 0.8rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LÉVORA</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>LÉVORA</h1>
+        <p>Conscious Elegance. Timeless Impact.</p>
+        <a href="#collections" class="btn btn-light">Shop the Collection</a>
+    </header>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>Our Philosophy</h2>
+            <div></div>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem;">
+            <p>Founded in 2026, LÉVORA represents the pinnacle of modern luxury. We believe that true sophistication should not come at the cost of our planet. Every stitch is a commitment to circularity, and every silhouette is designed to last a lifetime.</p>
+        </div>
+    </section>
+
+    <section id="collections" class="collections">
+        <div class="section-title">
+            <h2>The Spring Edit</h2>
+            <div></div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="Fashion">
+                <div class="card-info">
+                    <h3>The Silk Trench</h3>
+                    <p>$850.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Fashion">
+                <div class="card-info">
+                    <h3>Sculpted Blazer</h3>
+                    <p>$1,200.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80" alt="Fashion">
+                <div class="card-info">
+                    <h3>Regenerative Knit</h3>
+                    <p>$450.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability" class="sustainability">
+        <div class="sus-text">
+            <h2 class="serif" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Material Innovation</h2>
+            <p style="margin-bottom: 2rem;">From lab-grown fibers to waterless dyeing processes, we are redefining what it means to be a luxury house in the 21st century. 100% Carbon Neutral. 100% Transparent.</p>
+            <a href="#" class="btn btn-dark">Read our Impact Report</a>
+        </div>
+        <div class="sus-img"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Join the Atelier</h2>
+            <p style="margin-top: 10px; font-size: 0.9rem; letter-spacing: 1px;">Subscribe for exclusive previews and sustainable insights.</p>
+        </div>
+        <form style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <input type="email" placeholder="Email Address" style="padding: 1rem; width: 300px; border: 1px solid #ddd; outline: none;">
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-logo">LÉVORA</div>
+        <p style="font-size: 0.7rem; letter-spacing: 2px; color: #888;">© 2026 LÉVORA LUXUEUX. ALL RIGHTS RESERVED.</p>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Ethics</a>
+            <a href="#">Stores</a>
+            <a href="#">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f2f2f4"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111114" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#2a2a30" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="44" fill="url(#bg)"/>
+
+  <g opacity="0.7">
+    <path d="M160 170h210" stroke="#0f0f10" stroke-opacity="0.20" stroke-width="2"/>
+    <path d="M160 210h330" stroke="#0f0f10" stroke-opacity="0.14" stroke-width="2"/>
+    <path d="M160 250h280" stroke="#0f0f10" stroke-opacity="0.10" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M520 185c60-40 140-40 200 10 38 32 70 92 70 170 0 140-46 314-120 350-72 34-186 14-240-70-64-100-92-268-58-360 22-62 74-84 148-100z"
+          fill="url(#coat)"/>
+    <path d="M575 260c30-28 76-34 114-14 30 16 54 46 54 92 0 78-22 186-60 212-36 26-96 22-126-20-42-58-56-170-36-216 10-24 26-40 54-54z"
+          fill="#f6f6f8" opacity="0.12"/>
+    <path d="M530 410c72 16 156 16 242-8" stroke="#ffffff" stroke-opacity="0.25" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <text x="90" y="770" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="18" letter-spacing="5" fill="#0f0f10" opacity="0.55">FW / LOOK 01</text>
+  </g>
+</svg>
+

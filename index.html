@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FROSTWEAR — Editorial Fashion</title>
+    <meta
+      name="description"
+      content="A minimalist editorial fashion landing page with modern micro-interactions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="page">
+      <header class="top">
+        <nav class="nav" aria-label="Primary">
+          <a class="pill" href="#catalog">CATALOG</a>
+          <a class="pill" href="#about">ABOUT US</a>
+          <a class="pill" href="#contact">CONTACT US</a>
+        </nav>
+
+        <div class="brand">
+          <div class="signal" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="brandCopy">
+            <div class="brandName">FROSTWEAR</div>
+            <div class="brandTag">Editorial outerwear studio</div>
+          </div>
+        </div>
+
+        <div class="actions" aria-label="Quick actions">
+          <button class="iconBtn" type="button" aria-label="Favorites">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M12 20.5s-7-4.5-9.3-8.7C.8 8.4 2.5 5.5 5.7 5.1c1.7-.2 3.2.6 4.1 1.7.9-1.1 2.4-1.9 4.1-1.7 3.2.4 4.9 3.3 3 6.7C19 16 12 20.5 12 20.5Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="iconBtn" type="button" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M6.5 9h14l-1.2 6.6a2 2 0 0 1-2 1.6H9a2 2 0 0 1-2-1.6L5.8 4.8H3.5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 21a1.2 1.2 0 1 0 0-2.4A1.2 1.2 0 0 0 9 21Zm9 0a1.2 1.2 0 1 0 0-2.4A1.2 1.2 0 0 0 18 21Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button class="iconBtn" type="button" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M12 12a4.2 4.2 0 1 0-4.2-4.2A4.2 4.2 0 0 0 12 12Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M4.5 20.2c1.6-3.2 4.3-5 7.5-5s5.9 1.8 7.5 5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="main" class="main">
+        <section class="hero" aria-label="Hero">
+          <aside class="leftRail">
+            <div class="shopCard">
+              <div class="shopThumb" aria-hidden="true">
+                <img src="./assets/look-01.svg" alt="" />
+              </div>
+              <div class="shopLabel">
+                <span>S</span><span>H</span><span>O</span><span>P</span>
+              </div>
+              <button class="bigDot" type="button" aria-label="Open catalog">
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <div class="pager" aria-label="Sections">
+              <button class="dot isActive" type="button" aria-label="Section 1"></button>
+              <button class="dot" type="button" aria-label="Section 2"></button>
+              <button class="dot" type="button" aria-label="Section 3"></button>
+              <button class="dot" type="button" aria-label="Section 4"></button>
+            </div>
+
+            <div class="barcodeBlock" aria-hidden="true">
+              <div class="barcode"></div>
+              <div class="barcodeText">FW–A/W</div>
+            </div>
+          </aside>
+
+          <div class="centerStage">
+            <div class="metaTop">
+              <div class="metaRow">
+                <button class="metaBtn" type="button" data-step="-1" aria-label="Previous">
+                  &lt;100&gt;
+                </button>
+                <div class="metaCopy">
+                  <div class="metaTitle">New collections of winter jackets</div>
+                  <div class="metaSub">Quality that withstands time and temperature</div>
+                </div>
+                <button class="metaBtn" type="button" data-step="1" aria-label="Next">
+                  &lt;300&gt;
+                </button>
+              </div>
+              <div class="microIcons" aria-label="View controls">
+                <button class="micro" type="button" aria-label="Grid view">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 4h7v7H4V4Zm9 0h7v7h-7V4ZM4 13h7v7H4v-7Zm9 0h7v7h-7v-7Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <button class="micro" type="button" aria-label="Expand">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M9 4H4v5M4 4l7 7M15 20h5v-5m0 5-7-7M20 9V4h-5m5 0-7 7M4 15v5h5m-5 0 7-7"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="frame" aria-hidden="true">
+              <div class="frameInner">
+                <div class="frameNote">Go to catalog now</div>
+                <div class="frameArrow">↓</div>
+              </div>
+            </div>
+
+            <div class="modelWrap" aria-hidden="true">
+              <img class="model" src="./assets/hero-cutout.svg" alt="" />
+              <div class="shadow"></div>
+            </div>
+
+            <div class="headline">
+              <h1>
+                Your Ultimate Defense
+                <span>Against the Coldest Chill</span>
+              </h1>
+              <p class="lede">
+                When winter’s icy grip tightens, there’s no room for compromise — only warmth and
+                protection.
+              </p>
+              <div class="ctaRow">
+                <a class="cta" href="#catalog">Shop now <span aria-hidden="true">///</span></a>
+                <div class="chevrons" aria-hidden="true">⌄⌄</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="rightRail">
+            <div class="infoCard">
+              <div class="infoTitle">
+                Find out how cold our <br />
+                jackets can withstand
+              </div>
+              <div class="tempLine" aria-hidden="true">
+                <div class="tempDot"></div>
+                <div class="tempDash"></div>
+              </div>
+              <div class="sizes" aria-label="Sizes">
+                <span class="size isOn">S</span>
+                <span class="size">M</span>
+                <span class="size">L</span>
+                <span class="size">XL</span>
+              </div>
+              <div class="year">2016</div>
+            </div>
+
+            <div class="carousel" aria-label="Looks carousel">
+              <div class="carouselTop">
+                <div class="carouselArrows" aria-hidden="true">
+                  <span class="carArrow">›››</span><span class="carArrow muted">‹‹‹</span>
+                </div>
+                <button class="heartMini" type="button" aria-label="Save look">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 20.5s-7-4.5-9.3-8.7C.8 8.4 2.5 5.5 5.7 5.1c1.7-.2 3.2.6 4.1 1.7.9-1.1 2.4-1.9 4.1-1.7 3.2.4 4.9 3.3 3 6.7C19 16 12 20.5 12 20.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="carouselBody">
+                <div class="bullets" aria-hidden="true">
+                  <span class="b"></span><span class="b"></span><span class="b"></span>
+                </div>
+                <div class="carouselCopy">
+                  <div class="spec">
+                    <span class="k">•</span>
+                    <span class="t">Unyielding Protection</span>
+                  </div>
+                  <div class="spec">
+                    <span class="k">•</span>
+                    <span class="t">Uncompromising Comfort</span>
+                  </div>
+                  <div class="spec">
+                    <span class="k">•</span>
+                    <span class="t">Storm-ready detailing</span>
+                  </div>
+                </div>
+                <div class="slider">
+                  <button class="sBtn" type="button" data-step="-1" aria-label="Previous look">‹</button>
+                  <div class="track" aria-hidden="true">
+                    <div class="fill"></div>
+                    <div class="thumb"></div>
+                  </div>
+                  <button class="sBtn" type="button" data-step="1" aria-label="Next look">›</button>
+                </div>
+              </div>
+
+              <div class="carouselMedia">
+                <div class="miniMedia">
+                  <img id="lookImg" src="./assets/look-02.svg" alt="Look preview" />
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="sections" aria-label="Content">
+          <div class="section" id="catalog">
+            <h2>Catalog</h2>
+            <p>
+              A curated set of winter essentials — built for brutal weather and styled for editorial
+              silhouettes.
+            </p>
+            <div class="grid">
+              <article class="card">
+                <div class="cardImg">
+                  <img src="./assets/look-01.svg" alt="Nimbus puffer" />
+                </div>
+                <div class="cardRow">
+                  <div>
+                    <div class="cardTitle">Nimbus Puffer</div>
+                    <div class="cardMeta">-18°C rated • Recycled fill</div>
+                  </div>
+                  <button class="cardBtn" type="button">Add</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="cardImg">
+                  <img src="./assets/look-02.svg" alt="Arctic shell" />
+                </div>
+                <div class="cardRow">
+                  <div>
+                    <div class="cardTitle">Arctic Shell</div>
+                    <div class="cardMeta">3-layer • Seam sealed</div>
+                  </div>
+                  <button class="cardBtn" type="button">Add</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="cardImg">
+                  <img src="./assets/look-03.svg" alt="Down parka" />
+                </div>
+                <div class="cardRow">
+                  <div>
+                    <div class="cardTitle">Polar Parka</div>
+                    <div class="cardMeta">Detachable hood • Wind guard</div>
+                  </div>
+                  <button class="cardBtn" type="button">Add</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section" id="about">
+            <h2>About us</h2>
+            <p>
+              We design with quiet confidence: monochrome palettes, bold proportions, and materials
+              that hold up when the temperature drops.
+            </p>
+          </div>
+
+          <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>
+              Email <a href="mailto:studio@frostwear.example">studio@frostwear.example</a> or follow
+              the drop announcements.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footLeft">© <span id="year"></span> FROSTWEAR</div>
+        <div class="footRight">
+          <span class="mono">Made for Cursor</span>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <span id="toastText"></span>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
